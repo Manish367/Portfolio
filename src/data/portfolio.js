@@ -6,7 +6,7 @@ export const profile = {
     'React.js Engineer',
     'Apex & LWC Developer'
   ],
-  location: 'Mohali, Punjab, India',
+  location: 'Chandigarh, India',
   email: 'manishdas360@gmail.com',
   phone: '+91 87308 07180',
   github: 'https://github.com/Manish367',
