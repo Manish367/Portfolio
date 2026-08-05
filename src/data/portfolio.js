@@ -55,7 +55,7 @@ export const experience = [
     company: 'Growbiz Solutions',
     role: 'Associate Salesforce Developer',
     location: 'Chandigarh, India',
-    period: 'November 2025 – Present',
+    period: 'November 2025 – August 2026',
     points: [
       'Developed Salesforce CRM solutions including custom objects, custom fields, validation rules, and business process automation using Flows.',
       'Built Lightning Web Components (LWC) to enhance user experience and streamline business operations.',
