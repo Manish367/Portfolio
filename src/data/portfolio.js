@@ -6,14 +6,15 @@ export const profile = {
     'React.js Engineer',
     'Apex & LWC Developer'
   ],
+ 
   location: 'Chandigarh, India',
   email: 'manishdas360@gmail.com',
   phone: '+91 87308 07180',
   github: 'https://github.com/Manish367',
   linkedin: 'https://www.linkedin.com/in/monish-kumar-das-07662b17b/',
-  resume: '/MonishKumarDasResume.pdf',
+  resume: '/MonishUpdatedResume.pdf',
   summary:
-    'Associate Salesforce Developer with experience in Apex, SOQL, Lightning Web Components (LWC), Flows, and Salesforce CRM customization. Skilled in designing scalable business automation solutions, integrating third-party systems, and supporting production deployments — with a strong foundation in full-stack development across the MERN stack.'
+    'Associate Salesforce Developer with hands-on experience in Apex, SOQL, Lightning Web Components (LWC), Flows, and Salesforce CRM customization, plus full-stack development experience using the MERN stack. Currently expanding into Python-based data analysis and backend development (NumPy, Pandas, Flask, FastAPI) through self-directed learning.'
 };
 
 export const skills = [
@@ -38,7 +39,11 @@ export const skills = [
   },
   {
     group: 'Backend',
-    items: ['Node.js', 'Express.js', 'REST APIs', 'MongoDB', 'MySQL', 'JWT Authentication']
+    items: ['Node.js', 'Express.js', 'REST APIs', 'MongoDB', 'MySQL', 'JWT Authentication', 'Flask', 'FastAPI']
+  },
+  {
+    group: 'Python & Data',
+    items: ['Python', 'NumPy', 'Pandas', 'Matplotlib', 'Jupyter Notebook']
   },
   {
     group: 'Tools & Platforms',
@@ -46,7 +51,7 @@ export const skills = [
   },
   {
     group: 'Languages',
-    items: ['Java', 'JavaScript', 'C++']
+    items: ['Java', 'JavaScript', 'Python', 'C++']
   }
 ];
 
@@ -57,7 +62,7 @@ export const experience = [
     location: 'Chandigarh, India',
     period: 'November 2025 – August 2026',
     points: [
-      'Developed Salesforce CRM solutions including custom objects, custom fields, validation rules, and business process automation using Flows.',
+      'Developed Salesforce CRM solutions including custom objects, custom fields, validation rules, and business process automation, building 50+ Flows to streamline operational processes.',
       'Built Lightning Web Components (LWC) to enhance user experience and streamline business operations.',
       'Developed Apex classes, Apex Triggers, and optimized SOQL queries to implement business logic and improve data processing efficiency.',
       'Created reports and dashboards to provide actionable business insights and support operational decision-making.'
@@ -68,8 +73,8 @@ export const experience = [
         'Built and maintained Salesforce solutions for a logistics/relocation platform — quote management, work orders, scheduling, pricing, and resource allocation.',
         'Implemented Apex Classes, LWC, Record-Triggered Flows, Validation Rules, and custom objects to automate workflows.',
         'Integrated Salesforce with OptimoRoute for job scheduling, route optimization, and workforce management across regions.',
-        'Resolved production issues via debug log analysis, root-cause fixes, and Flow/Apex optimization.',
-        'Executed deployments, UAT support, and releases across Sandbox/Production using Change Sets, Git, and CI/CD.'
+        'Investigated and resolved 50+ production issues through debug log analysis, root-cause identification, and Apex/Flow optimization.',
+        'Executed 300+ deployments, UAT support, testing, and release activities across Sandbox and Production using Change Sets, Git, and CI/CD.'
       ]
     }
   },
@@ -99,6 +104,16 @@ export const experience = [
 ];
 
 export const projects = [
+    {
+    name: 'AgriConnect',
+    repo: 'Agri-Connect',
+    tagline: 'Smart agriculture platform for farmers',
+    description:
+      'A full-stack MERN platform for farmers with farm management, crop recommendations, fertilizer guidance, weather, smart irrigation, a crop calendar, expense tracking, equipment rental, market prices, government schemes, expert consultation, disease detection, and a community forum.',
+    tech: ['React', 'Vite', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Chart.js', 'React Three Fiber'],
+    live: 'https://agri-connect-orcin-mu.vercel.app',
+    github: 'https://github.com/Manish367/Agri-Connect'
+  },
   {
     name: 'Crowdfunding & Charity Platform',
     repo: 'Crowdfunding',
@@ -109,15 +124,36 @@ export const projects = [
     live: 'https://crowdfunding-steel-phi.vercel.app/',
     github: 'https://github.com/Manish367/Crowdfunding'
   },
-  {
-    name: 'Stock Buy Sell',
-    repo: 'STOCK_BUY_SELL',
-    tagline: 'Zerodha-inspired trading platform',
+    {
+    name: 'Sanctum India',
+    repo: 'Sanctum-India',
+    tagline: 'Digital pilgrimage guide to India\'s sacred sites',
     description:
-      'Full-stack trading simulator with real-time simulated market data, secure JWT auth, and a portfolio/order management system tracking 1000+ simulated trades — 25% faster order processing, 20% faster API responses.',
-    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT'],
-    live: 'https://stock-buy-sell-aprz.vercel.app/',
-    github: 'https://github.com/Manish367/STOCK_BUY_SELL'
+      'A content-rich MERN/TypeScript platform covering the 12 Jyotirlingas, 53 Shakti Peethas, Navdurga, and temple aartis — with story, history, architecture, festival, and travel info per site, licensed Wikimedia photography, and mythology kept deliberately separate from documented history.',
+    tech: ['React', 'TypeScript', 'Vite', 'Express', 'MongoDB', 'Mongoose', 'Zod', 'TanStack Query'],
+    live: 'https://client-three-theta-15.vercel.app',
+    github: 'https://github.com/Manish367/Sanctum-India'
+  },
+    {
+    name: 'AI Agent Workflow Builder',
+    repo: 'ai-agent-workflow-builder',
+    tagline: 'Mini n8n for chaining AI agent steps',
+    description:
+      'A multi-tenant workflow automation engine built on Next.js and Hasura/Postgres. Supports LLM-call, HTTP, conditional-branch, and human approval-gate steps, with webhook/cron/database-event triggers, live run subscriptions, and two layers of role-scoped permissions enforcing strict cross-org data isolation at the database level.',
+    tech: ['Next.js', 'TypeScript', 'GraphQL', 'Hasura', 'PostgreSQL', 'Nhost'],
+    live: 'https://ai-agent-workflow-builder-xi.vercel.app',
+    github: 'https://github.com/Manish367/ai-agent-workflow-builder'
+  },
+  
+  {
+    name: 'AI-Converse',
+    repo: 'AIConverse-_-AI-Conversation-',
+    tagline: 'ChatGPT-style conversational AI platform with multi-provider failover',
+    description:
+      'Full-stack AI chat platform with persistent history, conversation threads, and GPT-4o-mini vision queries. Architected a resilient fallback system across 6+ AI providers (OpenAI, ChatAnywhere, OpenRouter, Pollinations, HuggingFace, DeepAI) so chat stays available if a provider fails or rate-limits, plus multi-provider image generation with async job polling and exponential backoff retries.',
+    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT', 'OpenAI API', 'Cloudinary'],
+    live: 'https://ai-converse-ai-conversation.vercel.app',
+    github: 'https://github.com/Manish367/AIConverse-_-AI-Conversation-'
   },
   {
     name: 'WanderLust',
@@ -128,16 +164,6 @@ export const projects = [
     tech: ['Node.js', 'Express', 'MongoDB', 'Mapbox', 'Cloudinary', 'Bootstrap'],
     live: 'https://wander-lust-bbs0.onrender.com/listings',
     github: 'https://github.com/Manish367/WanderLust'
-  },
-  {
-    name: 'AI-Converse',
-    repo: 'AIConverse-_-AI-Conversation-',
-    tagline: 'AI conversation web app',
-    description:
-      'A full-stack AI chat application with a client/server architecture for real-time conversational interactions.',
-    tech: ['React', 'Node.js', 'Express'],
-    live: 'https://ai-converse-ai-conversation.vercel.app',
-    github: 'https://github.com/Manish367/AIConverse-_-AI-Conversation-'
   },
   {
     name: 'NextGen Homes',
@@ -158,6 +184,16 @@ export const projects = [
     tech: ['React', 'Node.js', 'Express'],
     live: 'https://fairy-tale-feasts.vercel.app',
     github: 'https://github.com/Manish367/Fairy-Tale-Feasts'
+  },
+  {
+    name: 'Stock Buy Sell',
+    repo: 'STOCK_BUY_SELL',
+    tagline: 'Zerodha-inspired trading platform',
+    description:
+      'Full-stack trading simulator with real-time simulated market data, secure JWT auth, and a portfolio/order management system tracking 1000+ simulated trades — 25% faster order processing, 20% faster API responses.',
+    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT'],
+    note: 'Live demo taken down at Zerodha\'s request over branding/copyright — source code only',
+    github: 'https://github.com/Manish367/STOCK_BUY_SELL'
   }
 ];
 

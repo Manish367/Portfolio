@@ -26,17 +26,23 @@ export default function Projects() {
                     <p className="text-fuchsia-400 text-sm font-medium mt-1">{p.tagline}</p>
                   </div>
                   <a
-                    href={p.live}
+                    href={p.live || p.github}
                     target="_blank"
                     rel="noreferrer"
                     className="shrink-0 w-10 h-10 rounded-full bg-white/5 border border-line flex items-center justify-center text-slate-300 group-hover:bg-fuchsia-500 group-hover:text-white group-hover:border-fuchsia-500 transition-all"
-                    aria-label={`Open ${p.name} live site`}
+                    aria-label={p.live ? `Open ${p.name} live site` : `Open ${p.name} on GitHub`}
                   >
                     <FiArrowUpRight />
                   </a>
                 </div>
 
                 <p className="relative mt-4 text-sm text-slate-400 leading-relaxed">{p.description}</p>
+
+                {p.note && (
+                  <p className="relative mt-3 text-xs text-amber-400/90 leading-relaxed">
+                    ⓘ {p.note}
+                  </p>
+                )}
 
                 <div className="relative mt-5 flex flex-wrap gap-2">
                   {p.tech.map((t) => (
@@ -50,14 +56,20 @@ export default function Projects() {
                 </div>
 
                 <div className="relative mt-6 flex items-center gap-5 text-sm font-medium">
-                  <a
-                    href={p.live}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 text-cyan-300 hover:text-cyan-200 transition-colors"
-                  >
-                    <FiExternalLink /> Live Demo
-                  </a>
+                  {p.live ? (
+                    <a
+                      href={p.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1.5 text-cyan-300 hover:text-cyan-200 transition-colors"
+                    >
+                      <FiExternalLink /> Live Demo
+                    </a>
+                  ) : (
+                    <span className="inline-flex items-center gap-1.5 text-slate-500">
+                      <FiExternalLink /> {p.note ? 'No live demo' : 'Code only'}
+                    </span>
+                  )}
                   <a
                     href={p.github}
                     target="_blank"
