@@ -111,7 +111,6 @@ export const projects = [
     description:
       'A full-stack support desk where a scikit-learn model (TF-IDF + logistic regression) predicts each ticket\'s category and priority with a confidence score, sends uncertain tickets to a human review queue, and stores agent corrections for retraining. Incident Radar groups similar recent tickets as possible shared incidents. Evaluated on ~2,450 held-out tickets across 10 queues (69.5% accuracy vs a 29% baseline), with a glassmorphism UI.',
     tech: ['React', 'Vite', 'Node.js', 'Express', 'MongoDB', 'FastAPI', 'scikit-learn', 'Python'],
-    note: 'Hosted on free tiers: if the demo has been idle, the first load can take about a minute to wake up.',
     live: 'https://support-iq-beta.vercel.app',
     github: 'https://github.com/Manish367/SupportIQ'
   },
