@@ -14,7 +14,7 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/monish-kumar-das-07662b17b/',
   resume: '/MonishUpdatedResume.pdf',
   summary:
-    'Associate Salesforce Developer with hands-on experience in Apex, SOQL, Lightning Web Components (LWC), Flows, and Salesforce CRM customization, plus full-stack development experience using the MERN stack. Currently expanding into Python-based data analysis and backend development (NumPy, Pandas, scikit-learn, Flask, FastAPI) through self-directed learning.'
+    'Associate Salesforce Developer with professional experience in Apex, SOQL, Lightning Web Components (LWC), Flows, and Salesforce CRM customization, plus full-stack development hands on experience using the MERN stack. Currently expanding into Python-based data analysis and backend development (NumPy, Pandas, scikit-learn, Flask, FastAPI) through self-directed learning.'
 };
 
 export const skills = [
