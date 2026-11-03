@@ -105,6 +105,16 @@ export const experience = [
 
 export const projects = [
     {
+    name: 'ML Studio',
+    repo: 'ML-Studio',
+    tagline: 'No-code machine learning playground for supervised and unsupervised learning',
+    description:
+      'A full-stack ML platform where you upload any CSV (up to 500 MB) or pick an example dataset, and the app detects whether it is a classification, regression, clustering or anomaly-detection problem. A feature engineering studio handles missing values, duplicates, outliers, encoding, scaling and dimensionality reduction (PCA, SVD, t-SNE), with undo and a Before vs After comparison. Train and compare 18 supervised models and 8 clustering/anomaly algorithms, with automatic K selection (elbow, silhouette, Calinski-Harabasz, Davies-Bouldin, nearest cluster distance), confusion matrices, ROC and PR curves, actual-vs-predicted plots, feature importance and a live prediction form. Built with leakage-safe scikit-learn pipelines, fixed random seeds and a glassmorphism UI. The backend runs on Render\'s free tier, so the first load can take about a minute.',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Bootstrap', 'Recharts', 'FastAPI', 'Python', 'scikit-learn', 'Pandas', 'NumPy'],
+    live: 'https://ml-studio-orpin.vercel.app',
+    github: 'https://github.com/Manish367/ML-Studio'
+  },
+    {
     name: 'SupportIQ',
     repo: 'SupportIQ',
     tagline: 'ML-powered support-ticket triage with human review and incident detection',
